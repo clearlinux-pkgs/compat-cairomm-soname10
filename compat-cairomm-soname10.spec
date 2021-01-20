@@ -4,7 +4,7 @@
 #
 Name     : compat-cairomm-soname10
 Version  : 1.12.0
-Release  : 11
+Release  : 12
 URL      : https://download.gnome.org/sources/cairomm/1.12/cairomm-1.12.0.tar.xz
 Source0  : https://download.gnome.org/sources/cairomm/1.12/cairomm-1.12.0.tar.xz
 Summary  : C++ wrapper for cairo - postscript support
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1611163452
+export SOURCE_DATE_EPOCH=1611163571
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -98,7 +98,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1611163452
+export SOURCE_DATE_EPOCH=1611163571
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/compat-cairomm-soname10
 cp %{_builddir}/cairomm-1.12.0/COPYING %{buildroot}/usr/share/package-licenses/compat-cairomm-soname10/1679b0cb5406c6e4624f779c02e32985497f7aa7
